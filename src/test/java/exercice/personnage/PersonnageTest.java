@@ -26,5 +26,17 @@ public class PersonnageTest {
         // THEN
         assertThat(ort).isEqualTo("EST");
     }
+    @Test
+    void tourner_2_retourne_SUD() {
+        // GIVEN
+        Personnage personnage = new Personnage();
+        String expec = "SUD";
+        // WHEN
+        String ort = personnage.tourner(2);
+        // THEN
+        assertThat(ort).isEqualTo("SUD");
+    }
 
+
+}
 
