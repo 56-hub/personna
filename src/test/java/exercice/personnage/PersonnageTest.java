@@ -9,10 +9,22 @@ public class PersonnageTest {
     void tourner_0_devrait_retourne_NORD() {
         // GIVEN
         Personnage personnage = new Personnage();
+        String expec = "NORD";
         // WHEN
-        String orientation = personnage.tourner(0);
+        String ort = personnage.tourner(0);
         // THEN
-        assertThat(orientation).isEqualTo("NORD");
+        assertThat(ort).isEqualTo(expec);
     }
-}
+
+    @Test
+    void tourner_1_retourne_EST() {
+        // GIVEN
+        Personnage personnage = new Personnage();
+        String expec = "EST";
+        // WHEN
+        String ort = personnage.tourner(1);
+        // THEN
+        assertThat(ort).isEqualTo("EST");
+    }
+
 
