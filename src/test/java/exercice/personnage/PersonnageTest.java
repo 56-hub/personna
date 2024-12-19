@@ -36,7 +36,16 @@ public class PersonnageTest {
         // THEN
         assertThat(ort).isEqualTo("SUD");
     }
-
+    @Test
+    void tourner_3_retourne_OUEST() {
+        // GIVEN
+        Personnage personnage = new Personnage();
+        String expec = "OUEST";
+        // WHEN
+        String ort = personnage.tourner(3);
+        // THEN
+        assertThat(ort).isEqualTo("OUEST");
+    }
 
 }
 

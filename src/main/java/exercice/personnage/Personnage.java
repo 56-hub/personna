@@ -7,8 +7,8 @@ public class Personnage {
             return "EST";
         else if (nbr == 2) // Ajout pour gérer le cas 2
             return "SUD";
-     //   else if (nbr == 3) // Ajout pour gérer le cas 3
-       //    return "OUEST";
+       else if (nbr == 3) // Ajout pour gérer le cas 3
+           return "OUEST";
         return "";
     }
 }
